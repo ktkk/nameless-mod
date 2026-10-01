@@ -1,4 +1,4 @@
-package com.example.examplemod.platform.services;
+package dev.katkak.namelessmod.platform.services;
 
 public interface IPlatformHelper {
 

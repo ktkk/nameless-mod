@@ -1,7 +1,7 @@
-package com.example.examplemod.platform;
+package dev.katkak.namelessmod.platform;
 
-import com.example.examplemod.Constants;
-import com.example.examplemod.platform.services.IPlatformHelper;
+import dev.katkak.namelessmod.Constants;
+import dev.katkak.namelessmod.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 

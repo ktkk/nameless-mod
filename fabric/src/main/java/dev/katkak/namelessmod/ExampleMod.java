@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package dev.katkak.namelessmod;
 
 import net.fabricmc.api.ModInitializer;
 

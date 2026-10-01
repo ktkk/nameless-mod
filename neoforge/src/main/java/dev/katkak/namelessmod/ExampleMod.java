@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package dev.katkak.namelessmod;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;

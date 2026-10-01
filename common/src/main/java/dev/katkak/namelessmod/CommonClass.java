@@ -1,6 +1,6 @@
-package com.example.examplemod;
+package dev.katkak.namelessmod;
 
-import com.example.examplemod.platform.Services;
+import dev.katkak.namelessmod.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
 
