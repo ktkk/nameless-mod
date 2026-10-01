@@ -1,6 +1,6 @@
 package dev.katkak.namelessmod.mixin;
 
-import dev.katkak.namelessmod.Constants;
+import dev.katkak.namelessmod.NamelessModCommon;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
@@ -10,11 +10,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Minecraft.class)
 public class MixinMinecraft {
-
     @Inject(at = @At("TAIL"), method = "<init>")
     private void init(CallbackInfo info) {
-
-        Constants.LOG.info("This line is printed by an example mod common mixin!");
-        Constants.LOG.info("MC Version: {}", SharedConstants.getCurrentVersion().name());
+        NamelessModCommon.LOGGER.info("This line is printed by an example mod common mixin!");
+        NamelessModCommon.LOGGER.info("MC Version: {}", SharedConstants.getCurrentVersion().name());
     }
 }

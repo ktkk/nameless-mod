@@ -34,9 +34,21 @@ configurations {
     }
 }
 
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+def commonResourcesDir = layout.buildDirectory.dir('generated/commonResources')
+def syncCommonResources = tasks.register('syncCommonResources', Sync) {
+    from sourceSets.main.resources
+    into commonResourcesDir
+}
+
 artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
-    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    commonResources(commonResourcesDir) {
+        builtBy syncCommonResources
+    }
 }
 
 // Implement mcgradleconventions loader attribute

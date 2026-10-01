@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-          "dev.example.examplemod.ExampleMod"
+          "dev.katkak.namelessmod.NamelessMod"
         ]
     },
     "mixins": [

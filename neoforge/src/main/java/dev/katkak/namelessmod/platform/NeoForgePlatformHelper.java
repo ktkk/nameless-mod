@@ -1,10 +1,12 @@
 package dev.katkak.namelessmod.platform;
 
-import dev.katkak.namelessmod.platform.services.IPlatformHelper;
+import com.google.auto.service.AutoService;
+import dev.katkak.namelessmod.platform.services.PlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 
-public class NeoForgePlatformHelper implements IPlatformHelper {
+@AutoService(PlatformHelper.class)
+public class NeoForgePlatformHelper implements PlatformHelper {
 
     @Override
     public String getPlatformName() {

@@ -1,10 +1,11 @@
 package dev.katkak.namelessmod.platform;
 
-import dev.katkak.namelessmod.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
+import com.google.auto.service.AutoService;
+import dev.katkak.namelessmod.platform.services.PlatformHelper;
 
-public class FabricPlatformHelper implements IPlatformHelper {
-
+@AutoService(PlatformHelper.class)
+public class FabricPlatformHelper implements PlatformHelper {
     @Override
     public String getPlatformName() {
         return "Fabric";
